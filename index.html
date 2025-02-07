@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWatt</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="path/to/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop id="background-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header class="header">
+        <h1>EcoWatt</h1>
+    </header>
+
+
+
+    <main class="main-container">
+
+
+        
+        <section class="card animated fadeInUp">
+            <h2>Today's Usage</h2>
+            <p id="usage" class="usage">0 kWh</p>
+        </section>
+        
+        <section class="card animated fadeInLeft">
+            <h2>Set Daily Limit</h2>
+            <input type="number" id="limit-input" placeholder="Enter limit in kWh" />
+            <button id="set-limit" class="btn">Set Limit</button>
+        </section>
+        
+        <section class="card animated fadeInRight">
+            <h2>Status</h2>
+            <p id="status" class="status">No limit set.</p>
+        </section>
+
+        <section class="chart-container animated zoomIn">
+            <canvas id="usageChart"></canvas>
+        </section>
+        <section class="description">
+            <div class="description-content">
+                <h2>Why Choose EcoWatt?</h2>
+                <p>EcoWatt helps you track your daily electricity consumption in real-time, ensuring that you stay within your usage limits and reduce unnecessary consumption. By providing personalized monitoring, EcoWatt empowers you to make informed decisions, ultimately promoting sustainability and saving on energy bills.</p>
+                <ul>
+                    <li>🌍 <strong>Sustainable Development:</strong> Track your electricity usage and reduce your carbon footprint by conserving energy.</li>
+                    <li>⚡ <strong>Real-Time Monitoring:</strong> Get live data on your energy usage and set custom limits based on your needs.</li>
+                    <li>💰 <strong>Cost Savings:</strong> Stay within your budget by avoiding overconsumption, helping you save money on electricity bills.</li>
+                    <li>📊 <strong>Personalized Usage Reports:</strong> Receive detailed reports of your daily usage to improve efficiency.</li>
+                </ul>
+            </div>
+            <div class="description-image">
+                <img src="image.jpg" alt="EcoWatt Advantages" class="advantage-img">
+            </div>
+        </section>
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose EcoWatt?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="feature1.jpg" alt="Real-Time Monitoring" height="200px" width="200px">
+                <h3>Real-Time Monitoring</h3>
+                <p>Track your energy usage as it happens.</p>
+            </div>
+            <div class="feature-card">
+                <img src="feature2.jpg" alt="Custom Limits" height="200px" width="200px">
+                <h3>Custom Limits</h3>
+                <p>Set daily limits to avoid overconsumption.</p>
+            </div>
+            <div class="feature-card">
+                <img src="feature3.jpg" alt="Detailed Reports" height="200px" width="200px">
+                <h3>Detailed Reports</h3>
+                <p>Analyze your usage trends and improve efficiency.</p>
+            </div>
+        </div>
+    </section>
+    <section class="usage">
+        <h2>Daily Energy Usage</h2>
+        <div id="usage-container">Loading data...</div>
+    </section>
+  
+    
+    
+   
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 EcoWatt</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
